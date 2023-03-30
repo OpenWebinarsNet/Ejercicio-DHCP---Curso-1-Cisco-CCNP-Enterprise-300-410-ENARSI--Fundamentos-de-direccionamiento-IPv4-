@@ -1,0 +1,33 @@
+CCNP ENARSI
+Curso: Fundamentos de direccionamiento IPv4 y IPv6
+Laboratorio: DHCP 
+Firmware: Routers  -> c7200-advipservicesk9-mz.152-4.S5.bin
+      
+	  
+Escenario: Openwebinars requiere desplegar un servidor DHCP para proporcionar direccionamiento IPv4 en una de sus oficinas remotas
+
+Completa los siguientes puntos para implementar DHCP
+
+1. Configura en R2 el pool DHCP nombrado como "ENARSI", con los siguientes parámetros:
+
+- Network: 10.10.10.0/24
+- Default router: 10.10.10.1
+- DNS server: 172.16.1.1
+- Domain-name: openwebinars.net
+- Opción 150: 172.16.1.10
+
+2. Excluye el rango de IP's 10.10.10.1 - 10.10.10.10 de la asignación dinámica DHCP
+3. Configura un DHCP relay-agent en R1 apuntando a la IP 172.16.1.1 de R2
+4. Fuerza la request DHCP desde PC1 mediante el comando "dhcp", posteriormente verifica la asignación de los parámetros DHCP desde R2 (show ip)
+5. Verifica que se ha realizado el binding DHCP correctamente en R2
+
+
+
+
+
+
+
+
+
+
+
